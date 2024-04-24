@@ -5,9 +5,9 @@ const env = require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const sequelize = new Sequelize(env.DB_NAME, env.DB_USER, env.DB_PASSWORD, {
-  host: env.DB_HOST,
-  dialect: env.DB_DIALECT
+const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+  host: process.env.DB_HOST,
+  dialect: process.env.DB_DIALECT
 });
 
 const User = sequelize.define('Students', {
