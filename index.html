@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100vw;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      height: 60vh;
+      width: 60vw;
+      background-color: rgb(170, 170, 170);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      margin: 10px;
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input::file-selector-button {
+      background-color: rgb(255, 255, 255);
+      color: rgb(105, 98, 98);
+      border: none;
+      border-radius: 10px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: none;
+      background-color: rgb(255, 255, 255);
+      color: rgb(110, 53, 53);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #error {
+      color: rgb(255, 0, 0);
+      font-weight: bold;
+    }
+
+    select {
+      margin: 10px;
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    option {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <form action="/register" method="post">
+        <div>
+          <input type="text" id="firstname" placeholder="Enter Your firstname" name="firstname" required>
+        </div>
+        <div>
+          <input type="text" id="lastname" placeholder="Enter Your lastname" name="lastname" required>
+        </div>
+        <div>
+          <input type="number" id="age" placeholder="Enter Your age" name="age" required>
+        </div>
+        <div>
+          <input type="number" id="contact" placeholder="Enter Your number" name="contact" required>
+        </div>
+        <div>
+          <select id="gender" name="gender" required>
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+  <!-- <script src="/script.js"></script> -->
+</body>
+
+</html>
