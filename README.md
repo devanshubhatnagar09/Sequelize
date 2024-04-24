@@ -18,7 +18,7 @@ This is a simple web application built using Express.js and Sequelize, allowing 
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/devanshubhatnagar09/Sequelize
    ```
 
 2. Install dependencies:
